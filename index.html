@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nanda Bagus Setiawan — Creative Frontend Developer</title>
+<meta name="description" content="Portfolio Nanda Bagus Setiawan, Creative Frontend Developer & UI/UX Enthusiast. Bangun website modern, cepat, dan responsif untuk bisnis Anda.">
+<meta name="theme-color" content="#0B0F0C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230B0F0C'/%3E%3Ctext x='12' y='16.5' font-family='monospace' font-size='11' font-weight='700' fill='%23C6FF5C' text-anchor='middle'%3E%3C/%3E%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<!-- ============ OPEN GRAPH / TWITTER CARD ============ -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nanda.dev">
+<meta property="og:title" content="Nanda Bagus Setiawan — Creative Frontend Developer">
+<meta property="og:description" content="Portfolio Nanda Bagus Setiawan, Creative Frontend Developer & UI/UX Enthusiast. Bangun website modern, cepat, dan responsif untuk bisnis Anda.">
+<meta property="og:url" content="https://portofolio-nandabagussetiawan.netlify.app/">
+<meta property="og:image" content="https://portofolio-nandabagussetiawan.netlify.app/og-thumbnail.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nanda Bagus Setiawan — Creative Frontend Developer">
+<meta name="twitter:description" content="Portfolio Nanda Bagus Setiawan, Creative Frontend Developer & UI/UX Enthusiast. Bangun website modern, cepat, dan responsif untuk bisnis Anda.">
+<meta name="twitter:image" content="https://portofolio-nandabagussetiawan.netlify.app/og-thumbnail.jpg">
+
+<!-- ============ STRUCTURED DATA (JSON-LD) ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Nanda Bagus Setiawan — Creative Frontend Developer",
+  "description": "Jasa pembuatan landing page, company profile, dan web app custom yang cepat, rapi, dan responsif.",
+  "image": "https://portofolio-nandabagussetiawan.netlify.app/foto-profil.webp",
+  "url": "https://portofolio-nandabagussetiawan.netlify.app/",
+  "email": "nandabagus913@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Muara Enim",
+    "addressRegion": "Sumatera Selatan",
+    "addressCountry": "ID"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Nanda Bagus Setiawan",
+    "jobTitle": "Creative Frontend Developer"
+  },
+  "areaServed": "ID",
+  "priceRange": "$$"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- ============ GOOGLE ANALYTICS (GA4) — stream: "absensi digital" ============ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8QH5ZHNJX5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-8QH5ZHNJX5');
+</script>
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div id="loader">
+  <div class="loader-inner">
+    <span class="loader-brackets">&lt;</span>
+    <span class="loader-name">NBS</span>
+    <span class="loader-brackets">/&gt;</span>
+  </div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div id="cursorDot"></div>
+<div id="cursorRing"></div>
+
+<!-- ============ FLOATING WHATSAPP CTA ============ -->
+<a class="wa-float" target="_blank" rel="noopener"
+   href="https://wa.me/6285188906264?text=Halo%20Nanda%2C%20saya%20tertarik%20mendiskusikan%20proyek%20website.%20Bisa%20dibantu%3F"
+   aria-label="Chat via WhatsApp">
+  <span class="wa-float-icon">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.42 5.83c0 4.55-3.7 8.21-8.26 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.25-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.15-.01-.31-.01-.48-.01a.93.93 0 0 0-.67.31c-.23.25-.87.85-.87 2.08s.89 2.42 1.02 2.58c.13.17 1.75 2.67 4.23 3.75.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/>
+    </svg>
+    <span class="wa-float-dot"></span>
+  </span>
+  <span class="wa-float-label">Chat WhatsApp<em>biasanya balas &lt; 24 jam</em></span>
+</a>
+
+<!-- ============ NAVBAR ============ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo"><span class="logo-bracket">&lt;</span>Nanda<span class="logo-accent">.dev</span><span class="logo-bracket">/&gt;</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">01 · Tentang</a></li>
+      <li><a href="#skills">02 · Keahlian</a></li>
+      <li><a href="#projects">03 · Proyek</a></li>
+      <li><a href="#contact">04 · Kontak</a></li>
+    </ul>
+    <a class="btn btn-nav-cta" target="_blank" rel="noopener"
+       href="https://wa.me/6285188906264?text=Halo%20Nanda%2C%20saya%20ingin%20diskusi%20proyek%20website%20saya.">
+      Hubungi Saya
+    </a>
+    <button id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ MOBILE MENU ============ -->
+<div id="mobile-menu">
+  <a href="#about">01 · Tentang</a>
+  <a href="#skills">02 · Keahlian</a>
+  <a href="#projects">03 · Proyek</a>
+  <a href="#contact">04 · Kontak</a>
+  <a class="btn btn-primary" target="_blank" rel="noopener"
+     href="https://wa.me/6285188906264?text=Halo%20Nanda%2C%20saya%20ingin%20diskusi%20proyek%20website%20saya.">
+    Chat WhatsApp
+  </a>
+</div>
+
+<!-- ============ HERO ============ -->
+<header id="hero">
+  <div class="glow-orb a"></div>
+  <div class="glow-orb b"></div>
+
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">// 00_intro — tersedia untuk proyek baru</p>
+      <h1 class="reveal-scale">
+        Nanda Bagus <span class="text-gradient">Setiawan</span>
+      </h1>
+      <p class="hero-role reveal">
+        <span class="prompt">$</span> <span id="typing-text"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-desc reveal">
+        Saya membangun website yang cepat, rapi, dan enak dipakai — dari landing page
+        sampai web app skala penuh, dengan detail interaksi kelas atas di setiap sudutnya.
+      </p>
+
+      <div class="hero-cta reveal">
+        <a class="btn btn-primary" target="_blank" rel="noopener"
+           href="https://wa.me/6285188906264?text=Halo%20Nanda%2C%20saya%20tertarik%20mendiskusikan%20proyek%20website.%20Bisa%20dibantu%3F">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.42 5.83c0 4.55-3.7 8.21-8.26 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.25-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.15-.01-.31-.01-.48-.01a.93.93 0 0 0-.67.31c-.23.25-.87.85-.87 2.08s.89 2.42 1.02 2.58c.13.17 1.75 2.67 4.23 3.75.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/>
+          </svg>
+          Ngobrol di WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#projects">Lihat Proyek</a>
+      </div>
+
+      <div class="social-orbit reveal">
+        <a href="#" aria-label="GitHub" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.27 20.1H3.65V9H7.27v11.1zM5.46 7.44c-1.16 0-2.1-.94-2.1-2.1 0-1.16.94-2.1 2.1-2.1 1.16 0 2.1.94 2.1 2.1 0 1.16-.94 2.1-2.1 2.1zM20.34 20.1h-3.62v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.7H9.07V9h3.48v1.52h.05c.48-.92 1.67-1.87 3.44-1.87 3.68 0 4.36 2.42 4.36 5.57v6.88z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.66.66 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.66 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13C20.32 1.35 19.65.94 18.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-10.84a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right">
+      <div class="terminal-card" id="tiltCard">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">nanda@portfolio ~ %</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="ln">1</span><span class="tk-prompt">$</span> whoami</p>
+          <p><span class="ln">2</span><span class="tk-str">nanda_bagus</span> <span class="tk-cmt">— frontend dev, Palembang</span></p>
+          <p class="term-blank"><span class="ln">3</span></p>
+          <p><span class="ln">4</span><span class="tk-prompt">$</span> cat status.log</p>
+          <p><span class="ln">5</span><span class="tk-var">&gt;</span> mengerjakan 2 company profile bulan ini</p>
+          <p><span class="ln">6</span><span class="tk-var">&gt;</span> slot proyek baru: <span class="tk-key">terbuka</span></p>
+          <p class="term-blank"><span class="ln">7</span></p>
+          <p><span class="ln">8</span><span class="tk-prompt">$</span> echo $waktu_respon</p>
+          <p><span class="ln">9</span><span class="tk-cmt">&lt; 24 jam kerja</span></p>
+        </div>
+        <div class="terminal-photo">
+          <img src="foto-profil.webp" alt="Foto Nanda Bagus Setiawan" onerror="this.parentElement.classList.add('img-fallback')">
+          <div class="photo-fallback-label"><span>foto-profil.webp</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll ke bawah"><span></span></a>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="section-head reveal">
+    <p class="eyebrow">// 01_tentang</p>
+    <h2>Lebih dekat dengan cara saya bekerja</h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text reveal-left">
+      <p>
+        Saya Nanda Bagus Setiawan, seorang Creative Frontend Developer yang senang
+        menerjemahkan ide bisnis menjadi antarmuka yang halus, jelas, dan menyenangkan
+        untuk digunakan. Bagi saya, website yang baik bukan cuma tampil bagus di layar
+        besar — tapi tetap terasa rapi dan cepat diakses dari genggaman tangan.
+      </p>
+      <p>
+        Setiap proyek saya kerjakan dengan pendekatan yang sama: memahami tujuan bisnis
+        Anda, merancang struktur yang masuk akal, lalu menuntaskan detail interaksi
+        sampai terasa premium — bukan sekadar "jadi".
+      </p>
+      <a class="btn btn-outline" target="_blank" rel="noopener"
+         href="https://wa.me/6285188906264?text=Halo%20Nanda%2C%20saya%20mau%20tanya-tanya%20dulu%20soal%20jasa%20pembuatan%20website.">
+        Tanya-tanya dulu, yuk
+      </a>
+    </div>
+
+    <div class="stat-grid reveal-right">
+      <div class="stat-box">
+        <span class="stat-num" data-count="40+">0</span>
+        <span class="stat-label">Proyek Selesai</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" data-count="98%">0</span>
+        <span class="stat-label">Klien Puas</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" data-count="4+">0</span>
+        <span class="stat-label">Tahun Pengalaman</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" data-count="24">0</span>
+        <span class="stat-label">Jam Respon Cepat</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="alt-bg">
+  <div class="section-head reveal">
+    <p class="eyebrow">// 02_keahlian</p>
+    <h2>Tools yang saya pakai tiap hari</h2>
+  </div>
+
+  <div class="pill-grid reveal-scale">
+    <span class="pill">HTML5</span>
+    <span class="pill">CSS3 / Sass</span>
+    <span class="pill">JavaScript (ES6+)</span>
+    <span class="pill">React</span>
+    <span class="pill">Tailwind CSS</span>
+    <span class="pill">Figma → Kode</span>
+    <span class="pill">Responsive Design</span>
+    <span class="pill">Web Performance</span>
+    <span class="pill">SEO Dasar</span>
+    <span class="pill">Git & GitHub</span>
+  </div>
+
+  <div class="service-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">route: /landing</div>
+      <h3>Landing Page</h3>
+      <p>Halaman promosi yang fokus mengarahkan pengunjung untuk menghubungi atau membeli, lengkap dengan copywriting yang jelas.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">route: /profil</div>
+      <h3>Company Profile</h3>
+      <p>Website perusahaan yang membangun kepercayaan — rapi, profesional, dan mencerminkan kredibilitas bisnis Anda.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">route: /app</div>
+      <h3>Web App Custom</h3>
+      <p>Aplikasi web interaktif sesuai kebutuhan spesifik, dari dashboard internal sampai sistem pemesanan.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">route: /maintenance</div>
+      <h3>Optimasi & Maintenance</h3>
+      <p>Perbaikan performa, kecepatan loading, dan perawatan berkala untuk website yang sudah berjalan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="section-head reveal">
+    <p class="eyebrow">// 03_proyek</p>
+    <h2>Beberapa hasil kerja terbaru</h2>
+  </div>
+
+  <div class="filter-bar reveal">
+    <button class="filter-btn active" data-filter="all">Semua</button>
+    <button class="filter-btn" data-filter="landing">Landing Page</button>
+    <button class="filter-btn" data-filter="company">Company Profile</button>
+    <button class="filter-btn" data-filter="app">Web App</button>
+  </div>
+
+  <div class="project-grid" id="projectGrid">
+    <div class="project-card reveal-scale" data-cat="landing">
+      <div class="project-thumb">
+        <img src="Peluncuran-Produk-Kopi-Lokal.webp" alt="Landing page Peluncuran Produk Kopi Lokal" loading="lazy" width="560" height="350">
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Landing Page</span>
+        <h3>Peluncuran Produk Kopi Lokal</h3>
+        <p>Landing page satu halaman dengan CTA pemesanan langsung ke WhatsApp.</p>
+      </div>
+    </div>
+    <div class="project-card reveal-scale" data-cat="company">
+      <div class="project-thumb">
+        <img src="Profil-Biro-Arsitektur.webp" alt="Website Profil Biro Arsitektur" loading="lazy" width="560" height="350">
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Company Profile</span>
+        <h3>Profil Biro Arsitektur</h3>
+        <p>Showcase portofolio proyek arsitektur dengan galeri interaktif.</p>
+      </div>
+    </div>
+    <div class="project-card reveal-scale" data-cat="app">
+      <div class="project-thumb">
+        <img src="Dashboard-Manajemen-Stok.webp" alt="Dashboard Manajemen Stok" loading="lazy" width="560" height="350">
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Web App</span>
+        <h3>Dashboard Manajemen Stok</h3>
+        <p>Panel admin untuk memantau stok dan pesanan secara real-time.</p>
+      </div>
+    </div>
+    <div class="project-card reveal-scale" data-cat="landing">
+      <div class="project-thumb">
+        <img src="Event-Registrasi-Seminar.webp" alt="Landing page Event Registrasi Seminar" loading="lazy" width="560" height="350">
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Landing Page</span>
+        <h3>Event Registrasi Seminar</h3>
+        <p>Halaman pendaftaran event dengan form dan hitung mundur.</p>
+      </div>
+    </div>
+    <div class="project-card reveal-scale" data-cat="company">
+      <div class="project-thumb">
+        <img src="Klinik-Kecantikan-Premium.webp" alt="Website Klinik Kecantikan Premium" loading="lazy" width="560" height="350">
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Company Profile</span>
+        <h3>Klinik Kecantikan Premium</h3>
+        <p>Website profil klinik dengan katalog layanan dan booking WhatsApp.</p>
+      </div>
+    </div>
+    <div class="project-card reveal-scale" data-cat="app">
+      <div class="project-thumb">
+        <img src="Sistem-Reservasi-Meja-Restoran.webp" alt="Sistem Reservasi Meja Restoran" loading="lazy" width="560" height="350">
+      </div>
+      <div class="project-info">
+        <span class="project-tag">Web App</span>
+        <h3>Sistem Reservasi Meja Restoran</h3>
+        <p>Aplikasi reservasi dengan konfirmasi otomatis via WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section id="certifications" class="alt-bg">
+  <div class="section-head reveal">
+    <p class="eyebrow">// 04_sertifikat</p>
+    <h2>Pengakuan & pembelajaran berkelanjutan</h2>
+  </div>
+
+  <div class="cert-grid">
+    <div class="cert-card reveal" onclick="openCert('Front-End Web Developer', 'Dicoding Indonesia', '2024')">
+      <div class="cert-icon"><svg class="icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 13 10 18 19 7"/></svg></div>
+      <h3>Front-End Web Developer</h3>
+      <p>Dicoding Indonesia · 2024</p>
+    </div>
+    <div class="cert-card reveal" onclick="openCert('Responsive Web Design', 'freeCodeCamp', '2023')">
+      <div class="cert-icon"><svg class="icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 13 10 18 19 7"/></svg></div>
+      <h3>Responsive Web Design</h3>
+      <p>freeCodeCamp · 2023</p>
+    </div>
+    <div class="cert-card reveal" onclick="openCert('JavaScript Algorithms & Data Structures', 'freeCodeCamp', '2023')">
+      <div class="cert-icon"><svg class="icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 13 10 18 19 7"/></svg></div>
+      <h3>JavaScript Algorithms</h3>
+      <p>freeCodeCamp · 2023</p>
+    </div>
+    <div class="cert-card reveal" onclick="openCert('UI/UX Design Fundamentals', 'Skilvul', '2022')">
+      <div class="cert-icon"><svg class="icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 13 10 18 19 7"/></svg></div>
+      <h3>UI/UX Design Fundamentals</h3>
+      <p>Skilvul · 2022</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials">
+  <div class="section-head reveal">
+    <p class="eyebrow">// 05_testimoni</p>
+    <h2>Kata mereka yang sudah bekerja sama</h2>
+  </div>
+
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <p>"Nanda cepat tanggap dan hasilnya jauh melebihi ekspektasi. Website toko kami jadi terlihat jauh lebih profesional."</p>
+      <div class="testi-author">
+        <span class="testi-avatar">RA</span>
+        <div><strong>Rina Amelia</strong><span>Pemilik Toko Online</span></div>
+      </div>
+    </div>
+    <div class="testi-card reveal">
+      <p>"Komunikasi lancar, revisi cepat, dan yang penting website-nya benar-benar ringan diakses dari HP."</p>
+      <div class="testi-author">
+        <span class="testi-avatar">DP</span>
+        <div><strong>Dimas Pratama</strong><span>Founder Startup</span></div>
+      </div>
+    </div>
+    <div class="testi-card reveal">
+      <p>"Detail kecil seperti animasi dan tata letaknya terasa niat banget. Recommended untuk yang mau tampil beda."</p>
+      <div class="testi-author">
+        <span class="testi-avatar">SW</span>
+        <div><strong>Siti Wulandari</strong><span>Manajer Pemasaran</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="alt-bg">
+  <div class="section-head reveal">
+    <p class="eyebrow">// 06_faq</p>
+    <h2>Pertanyaan yang sering ditanyakan</h2>
+  </div>
+
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Berapa lama waktu pengerjaan website?
+        <span class="faq-icon"><svg class="icon-plus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+      </button>
+      <div class="faq-a"><p>Tergantung kompleksitas, umumnya 5–14 hari kerja untuk landing page hingga company profile, dan didiskusikan lebih detail untuk web app custom.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Apakah website yang dibuat responsif di HP?
+        <span class="faq-icon"><svg class="icon-plus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+      </button>
+      <div class="faq-a"><p>Ya, setiap website yang saya kerjakan diuji dan dioptimalkan agar tampil rapi di berbagai ukuran layar, dari desktop sampai HP.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Bagaimana cara mulai konsultasi proyek?
+        <span class="faq-icon"><svg class="icon-plus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+      </button>
+      <div class="faq-a"><p>Cukup klik tombol WhatsApp di halaman ini, ceritakan kebutuhan Anda, dan saya akan bantu susun rencana serta estimasi biayanya.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Apakah ada garansi revisi?
+        <span class="faq-icon"><svg class="icon-plus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+      </button>
+      <div class="faq-a"><p>Ada. Setiap paket sudah termasuk sesi revisi agar hasil akhir benar-benar sesuai kebutuhan Anda.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / CTA ============ -->
+<section id="contact">
+  <div class="contact-card reveal-scale">
+    <p class="eyebrow">// 07_kontak</p>
+    <h2>Punya ide website? Mari diskusikan sekarang.</h2>
+    <p class="contact-desc">
+      Ceritakan kebutuhan Anda lewat WhatsApp — biasanya saya balas dalam hitungan jam,
+      bukan hari.
+    </p>
+    <a class="btn btn-primary btn-lg" target="_blank" rel="noopener"
+       href="https://wa.me/6285188906264?text=Halo%20Nanda%2C%20saya%20tertarik%20mendiskusikan%20proyek%20website.%20Bisa%20dibantu%3F">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.42 5.83c0 4.55-3.7 8.21-8.26 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.25-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.15-.01-.31-.01-.48-.01a.93.93 0 0 0-.67.31c-.23.25-.87.85-.87 2.08s.89 2.42 1.02 2.58c.13.17 1.75 2.67 4.23 3.75.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/>
+      </svg>
+      Hubungi Kami
+    </a>
+    <div class="contact-meta">
+      <span>📍 Putak, Gelumbang, Muara Enim</span>
+      <span>✉️ nandabagus913@gmail.com</span>
+      <span>⏱ Respon cepat &lt; 24 jam</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-inner">
+    <a href="#hero" class="logo"><span class="logo-bracket">&lt;</span>Nanda<span class="logo-accent">.dev</span><span class="logo-bracket">/&gt;</span></a>
+    <p>© <span id="year"></span> Nanda Bagus Setiawan. Dibangun dengan teliti, baris demi baris.</p>
+    <div class="footer-social">
+      <a href="#" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.27 20.1H3.65V9H7.27v11.1zM5.46 7.44c-1.16 0-2.1-.94-2.1-2.1 0-1.16.94-2.1 2.1-2.1 1.16 0 2.1.94 2.1 2.1 0 1.16-.94 2.1-2.1 2.1zM20.34 20.1h-3.62v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.7H9.07V9h3.48v1.52h.05c.48-.92 1.67-1.87 3.44-1.87 3.68 0 4.36 2.42 4.36 5.57v6.88z"/></svg>
+      </a>
+      <a href="https://wa.me/6285188906264" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.42 5.83c0 4.55-3.7 8.21-8.26 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.25-.64.8-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.15-.01-.31-.01-.48-.01a.93.93 0 0 0-.67.31c-.23.25-.87.85-.87 2.08s.89 2.42 1.02 2.58c.13.17 1.75 2.67 4.23 3.75.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ BACK TO TOP ============ -->
+<button id="backToTop" aria-label="Kembali ke atas"><svg class="icon-arrow-up" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="6 11 12 5 18 11"/></svg></button>
+
+<!-- ============ CERT MODAL ============ -->
+<div id="certModal" class="cert-modal" role="dialog" aria-modal="true" aria-labelledby="certTitle">
+  <div class="cert-modal-card">
+    <button class="cert-close" onclick="closeCert()"><svg class="icon-close" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button>
+    <div class="cert-modal-icon"><svg class="icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 13 10 18 19 7"/></svg></div>
+    <h3 id="certTitle">Judul Sertifikat</h3>
+    <p id="certIssuer">Penerbit · Tahun</p>
+  </div>
+</div>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="main.js"></script>
+</body>
+</html>
